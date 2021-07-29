@@ -1,0 +1,75 @@
+.form-container {
+    padding: 1rem;
+    height: 21rem;
+    transform: translate(-130%);
+    transition: transform 1s ease;
+}
+
+.form-container-appear {
+    transform: translate(0px);
+}
+
+p.form {
+    margin:0.5em 0 0 1.8em ;
+}
+
+.form:last-child {
+    background-color: red;
+}
+
+.form-list {
+    padding: 0;
+    width: 97%;
+    margin: auto;
+    height: 100%;
+}
+
+.form-list-item {
+    list-style: none;
+    height: 4rem;
+}
+
+.form-list-item-textarea {
+    list-style: none;
+}
+
+.input-field {
+    width: 95%;
+    height: 1.7rem;
+    border: 0;
+    padding: .5rem;
+    background-color: rgb(143 143 143 / 26%);
+    color: whitesmoke;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    outline: none;
+    transition: border 0.5s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.input-field-textarea {
+    height: 8rem;
+}
+
+.form-list-button{
+    list-style: none;
+}
+
+.form-button {
+    background-color: rgb(143 143 143 / 26%);
+    border: 0;
+    border-bottom: 2px solid white;
+    padding: 1rem 2rem;
+    color: whitesmoke;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 0.5rem;
+}
+
+.input-field:focus {
+    border-bottom: 2px solid white;
+}
+
+
+.input-field:focus-visible {
+    border-bottom: 2px solid white;
+}

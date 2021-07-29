@@ -1,0 +1,41 @@
+.tec-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+    grid-auto-rows: minmax(100px, auto);
+    width: 100%;
+    margin-top: 5px;
+}
+
+.tec-grid-element {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    opacity:0;
+    transition: opacity 1s cubic-bezier(0.99, 0, 0.7, 0.79);
+}
+
+.tec-grid-element-appear {
+    opacity: 1;
+}
+
+.tec-grid-element-img {
+    width: 64px;
+    margin:auto;
+}
+
+.tec-grid-element-subtitle {
+    font-family: 'Nunito', sans-serif;
+    color:whitesmoke;
+    margin:auto;
+    font-weight: 400;
+    font-size: 0.9em;
+    width: fit-content;
+}
+
+@media (min-width: 700px) {
+    .tec-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+    }
+}

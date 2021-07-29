@@ -1,0 +1,67 @@
+.menu-list-container {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 0.7em 0 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.menu-list-element{
+    list-style: none;
+    text-align: right;
+    position: relative;
+}
+
+.menu-item {
+    user-select: none;
+    text-decoration: none;
+    color:lightgrey;
+    height: 30px;
+    font-size: 2rem;
+}
+
+.menu-network-container {
+    margin-top: 2rem;
+    height: 4rem;
+    text-align: right;
+}
+
+.menu-network-container a {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    padding-left:1rem;
+}
+
+.network-container a:first-child {
+    margin-right: 2rem;
+}
+
+.network-logos {
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    display: none;
+}
+
+
+@media (min-width: 1000px) {
+    .menu {
+        display: flex;
+        align-items: center;
+        width: 15rem;
+        height: 100vh;
+        position: fixed;
+        background-color: rgb(13, 14, 44);
+        z-index: 1000;
+        box-shadow: 3px 1px 7px 1px rgba(255,255,255,0.25);
+        -webkit-box-shadow: 3px 1px 7px 1px rgba(255,255,255,0.25);
+        -moz-box-shadow: 3px 1px 7px 1px rgba(255,255,255,0.25);
+    }
+}

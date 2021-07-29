@@ -1,0 +1,21 @@
+.carousel-initialized {
+    overflow: visible;
+}
+
+.carousel-main{
+    height:580px;
+    padding: 1rem 0;
+    opacity: 0;
+    transition: opacity 1s cubic-bezier(0.99, 0, 0.7, 0.79);;
+}
+
+.carousel-main-appear {
+    opacity: 1;
+}
+.carousel-arrow {
+    filter:hue-rotate(200deg) brightness(300%) saturate(250%);
+}
+
+.carousel-arrow::before {
+    transform:scale(1.9)
+}

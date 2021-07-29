@@ -1,0 +1,98 @@
+.nav-container {
+    display: -webkit-inline-flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    position: fixed;
+    top:0;
+    left:0;
+    font-size:2em;
+    background: rgba(5, 4, 23, 0.89);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity .5s;
+}
+
+.nav-container.isOpen {
+    opacity: 1;
+    z-index: 900;
+}
+
+.menu-button {
+    position: fixed;
+    top: 5px;
+    right: 0;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    gap: 4px;
+    z-index: 800;
+}
+
+.nav-list {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 0.5em 0 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    transform: translate(80%);
+    transition: transform .5s ease-in-out;
+}
+
+.nav-list.isOpen {
+    transform: translate(0%);
+}
+
+.nav-list-element{
+    list-style: none;
+    text-align: right;
+    position: relative;
+}
+
+.nav-item {
+    user-select: none;
+    text-decoration: none;
+    color:lightgrey;
+    height: 30px;
+}
+
+.network-container {
+    text-align: right;
+    margin-top: 2rem;
+    height: 4rem;
+}
+
+.network-container a {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
+
+.network-container a:first-child {
+    margin-right: 2rem;
+}
+
+.network-logos {
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 1000px) {
+    .menu-button {
+        display: none;
+    }
+     
+}

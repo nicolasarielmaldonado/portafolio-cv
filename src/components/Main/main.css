@@ -1,0 +1,17 @@
+.home-container {
+    height: 800px;
+}
+
+.top-container {
+    height: 4rem;
+    padding: .5rem;
+}
+
+.dots {
+    flex: 0 0 auto;
+    position: relative;
+    width: .25rem;
+    height: .25rem;
+    border-radius: .25rem;
+    background: white;
+}

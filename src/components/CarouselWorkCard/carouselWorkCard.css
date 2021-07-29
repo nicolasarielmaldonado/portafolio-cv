@@ -1,0 +1,77 @@
+.carousel-wrapper {
+    margin: 0.2rem auto;
+}
+
+.carousel-works-element {
+    width: 100%;
+    margin: auto;
+}
+
+.carousel-works-grid-element-img {
+    width: 100%;
+    max-width: 1200px;
+    height: 410px;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+.carousel-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:  rgb(10 67 78 / 78%);
+    height: 170px;
+}
+
+.carousel-description {
+    margin: 0;
+    color: whitesmoke;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0rem 6rem;
+    font-size: 1.2rem;
+    height: 66%;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-container-link {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+    height: 30%;
+}
+
+.button-link-overlay {
+    text-decoration: none;
+    background-color: transparent;
+    border: 0;
+}
+
+.overlay-logo {
+    height: 36px;
+    filter: brightness(0) invert(1);
+    animation-name: vibrate;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes vibrate {
+    0% { 
+        transform: rotate(0deg); 
+    }
+    5% { 
+        transform: rotate(15deg); 
+    }
+    10% {
+        transform: rotate(-15deg); 
+    }
+    15% {
+        transform: rotate(0deg); 
+    }
+    100% { 
+        transform: rotate(0deg); 
+    }
+}
