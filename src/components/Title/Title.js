@@ -22,7 +22,7 @@ export const Title = ({scrollRef, screenPos}) => {
 
                     <p className={`tags ${screenPos>=1 && "tags-appear"} h2`}><code>{"<"}</code>{`h2`}<code>{">"}</code></p>
 
-                    <h2 className={`h3-title ${screenPos>=1 && "h3-title-appear"}`}>Desarrollador Front-End</h2>
+                    <h2 className={`h2-title ${screenPos>=1 && "h2-title-appear"}`}>Desarrollador Front-End</h2>
                     
                     <p className={`tags ${screenPos>=1 && "tags-appear"} h2`} ><code>{"</"}</code>{`h2`}<code>{">"}</code></p>
 

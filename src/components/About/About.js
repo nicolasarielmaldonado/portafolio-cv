@@ -12,13 +12,13 @@ const About = ({screenPos}) => {
             <p className={`tags section ${screenPos>=2 && "tags-appear"}`}><code>{"<"}</code>{`section`}<code>{">"}</code></p>  
             <p className={`tags p ${screenPos>=2 && "tags-appear"}`}><code>{"<"}</code>{`p`}<code>{">"}</code></p>  
 
-            <p className={`paragraph ${screenPos>=2 && "paragraph-appear"}`}>Desarrollador Front-End, amante de resolver problemas y desafíos, de estar siempre aprendiendo algo nuevo y de buscar el camino mas eficiente.</p>  
+            <p className={`paragraph ${screenPos>=2 && "paragraph-appear"}`}>Desarrollador Front-End, me considero una persona creativa, con una gran capacidad de resolución de problemas, proactivo, me gusta trabajar en equipo y aprender de diferentes puntos de vista, apasionado por tecnologías web y siempre estar aprendiendo algo nuevo.</p>  
             
             <p className={`tags p ${screenPos>=2 && "tags-appear"}`}><code>{"</"}</code>{`p`}<code>{">"}</code></p>   
 
             <p className={`tags p ${screenPos>=2 && "tags-appear"}`}><code>{"<"}</code>{`p`}<code>{">"}</code></p> 
 
-            <p className={`paragraph ${screenPos>=2 && "paragraph-appear"}`}>Actualmente estudiando Desarollo Web en la UNLaM, y diferentes estudios autodidactas.</p> 
+            <p className={`paragraph ${screenPos>=2 && "paragraph-appear"}`}>Actualmente estudiando Desarollo Web en la Universad Nacional de La Matanza.</p> 
 
             <p className={`tags p ${screenPos>=2 && "tags-appear"}`}><code>{"</"}</code>{`p`}<code>{">"}</code></p>  
             <p className={`tags section ${screenPos>=2 && "tags-appear"}`}><code>{"</"}</code>{`section`}<code>{">"}</code></p>

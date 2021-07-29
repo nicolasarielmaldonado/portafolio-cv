@@ -30,7 +30,7 @@
     font-size:1.3em;
 }
 
-.h3-title {
+.h2-title {
     margin:0;
     margin-left: 40px;
     font-family: 'Nunito', sans-serif;
@@ -43,7 +43,7 @@
     transform: scale(0.9);
 }
 
-.h3-title-appear {
+.h2-title-appear {
     opacity: 1;
     transform: scale(1);
 }
@@ -94,6 +94,13 @@
 @media (min-width: 700px) {
     .main-container {
         padding: 0 3rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    
+    .h2-title {
+        font-size: 1.2rem;
     }
 }
 
