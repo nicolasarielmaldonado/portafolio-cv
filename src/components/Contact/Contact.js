@@ -29,6 +29,7 @@ const Contact = ({screenPos}) => {
                     </li>  
                     <li className="form-list-button">
                         <input className="form-button" id="submit" type="submit" value="Enviar"/>
+                        <input type="hidden" name="_next" value="https://nicolasarielmaldonado.github.io/portafolio-cv/"></input>
                     </li>
                 </ul>
             </form>

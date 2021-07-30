@@ -9,10 +9,18 @@
 
 .carousel-works-grid-element-img {
     width: 100%;
-    max-width: 1200px;
     height: 410px;
     object-fit: cover;
     object-position: top;
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+.carousel-works-grid-element-img:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
 }
 
 
@@ -33,6 +41,7 @@
     height: 66%;
     display: flex;
     align-items: center;
+    text-align: center;
 }
 
 .carousel-container-link {

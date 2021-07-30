@@ -18,7 +18,7 @@ const About = ({screenPos}) => {
 
             <p className={`tags p ${screenPos>=2 && "tags-appear"}`}><code>{"<"}</code>{`p`}<code>{">"}</code></p> 
 
-            <p className={`paragraph ${screenPos>=2 && "paragraph-appear"}`}>Actualmente estudiando Desarollo Web en la Universad Nacional de La Matanza.</p> 
+            <p className={`paragraph ${screenPos>=2 && "paragraph-appear"}`}>Actualmente estudiando Desarrollo Web en la Universidad Nacional de La Matanza.</p> 
 
             <p className={`tags p ${screenPos>=2 && "tags-appear"}`}><code>{"</"}</code>{`p`}<code>{">"}</code></p>  
             <p className={`tags section ${screenPos>=2 && "tags-appear"}`}><code>{"</"}</code>{`section`}<code>{">"}</code></p>

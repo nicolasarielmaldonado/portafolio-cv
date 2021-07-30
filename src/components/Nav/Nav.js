@@ -19,7 +19,7 @@ export const Nav = ({open, setOpen}) => {
                     <a className="nav-item" href="#sobremi"><code>{"<"}</code>Sobre mí<code>{"/>"}</code></a>
                 </li>
                 <li onClick={() => setOpen(false)} className="nav-list-element">
-                    <a className="nav-item" href="#tecnologias"><code>{"<"}</code>Tecnologias<code>{"/>"}</code></a>
+                    <a className="nav-item" href="#tecnologias"><code>{"<"}</code>Tecnologías<code>{"/>"}</code></a>
                 </li>
                 <li onClick={() => setOpen(false)} className="nav-list-element">
                     <a className="nav-item" href="#trabajos"><code>{"<"}</code>Trabajos<code>{"/>"}</code></a>

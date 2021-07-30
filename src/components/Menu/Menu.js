@@ -16,7 +16,7 @@ export const Menu = () => {
                     <a className="menu-item" href="#sobremi"><code>{"<"}</code>Sobre mí<code>{"/>"}</code></a>
                 </li>
                 <li className="menu-list-element">
-                    <a className="menu-item" href="#tecnologias"><code>{"<"}</code>Tecnologias<code>{"/>"}</code></a>
+                    <a className="menu-item" href="#tecnologias"><code>{"<"}</code>Tecnologías<code>{"/>"}</code></a>
                 </li>
                 <li className="menu-list-element">
                     <a className="menu-item" href="#trabajos"><code>{"<"}</code>Trabajos<code>{"/>"}</code></a>

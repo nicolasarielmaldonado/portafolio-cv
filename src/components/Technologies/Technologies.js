@@ -11,10 +11,84 @@ import reactLogo from '../../assets/logos/react.png';
 import styledLogo from '../../assets/logos/styled.png';
 import tailwindLogo from '../../assets/logos/tailwind.png';
 import javaLogo from '../../assets/logos/java.png';
+import { TechnologiesElement } from '../TechnologiesElement/TechnologiesElement';
 
 import './technologies.css';
 
-
+const TecElements= [
+    {
+        id:1,
+        imgSource: javascriptLogo,
+        description: "Javascript",
+        alt:"javascript-logo",
+    },
+    {
+        id:2,
+        imgSource: htmlLogo,
+        description: "HTML5",
+        alt:"html-logo",
+    },
+    {
+        id:3,
+        imgSource: cssLogo,
+        description: "CSS3",
+        alt:"css-logo",
+    },
+    {   
+        id:4,
+        imgSource: jqueryLogo,
+        description: "JQuery",
+        alt:"jquery-logo",
+    },
+    {
+        id:5,
+        imgSource: bootstrapLogo,
+        description: "Bootstrap",
+        alt:"bootstrap-logo",
+    },
+    {
+        id:6,
+        imgSource: gitLogo,
+        description: "Git",
+        alt:"git-logo",
+    },
+    {
+        id:7,
+        imgSource: nodeLogo,
+        description: "Node.js",
+        alt:"node-logo",
+    },
+    {
+        id:8,
+        imgSource: npmLogo,
+        description: "npm",
+        alt:"npm-logo",
+    },
+    {
+        id:9,
+        imgSource: reactLogo,
+        description: "React.js",
+        alt:"react-logo",
+    },
+    {
+        id:10,
+        imgSource: styledLogo,
+        description: "Styled Components",
+        alt:"styled-components-logo",
+    },
+    {
+        id:11,
+        imgSource: tailwindLogo,
+        description: "Tailwind.css",
+        alt:"tailwind-logo",
+    },
+    {
+        id:12,
+        imgSource: javaLogo,
+        description: "Java",
+        alt:"java-logo",
+    },
+];
 
 const Technologies = ({screenPos}) => {
     return (
@@ -25,54 +99,18 @@ const Technologies = ({screenPos}) => {
             <p className={`tags grid ${screenPos>=3 && "tags-appear"}`}><code>{"<"}</code>{`div`}<code>{">"}</code></p>
 
             <div className="tec-grid">
-                <div className={`tec-grid-element ${screenPos>=3 && "tec-grid-element-appear"}`}>
-                    <img className="tec-grid-element-img" alt="javascript-logo" src={javascriptLogo}/>
-                    <h3 className="tec-grid-element-subtitle">Javascript</h3>
-                </div>
-                <div className={`tec-grid-element ${screenPos>=3 && "tec-grid-element-appear"}`}>
-                    <img className="tec-grid-element-img" alt="html-logo" src={htmlLogo}/>
-                    <h3 className="tec-grid-element-subtitle">HTML5</h3>
-                </div>
-                <div className={`tec-grid-element ${screenPos>=3 && "tec-grid-element-appear"}`}>
-                    <img className="tec-grid-element-img" alt="css-logo" src={cssLogo}/>
-                    <h3 className="tec-grid-element-subtitle">CSS3</h3>
-                </div>
-                <div className={`tec-grid-element ${screenPos>=3 && "tec-grid-element-appear"}`}>
-                    <img className="tec-grid-element-img" alt="jquery-logo" src={jqueryLogo}/>
-                    <h3 className="tec-grid-element-subtitle">JQuery</h3>
-                </div>
-                <div className={`tec-grid-element ${screenPos>=3 && "tec-grid-element-appear"}`}>
-                    <img className="tec-grid-element-img" alt="bootstrap-logo" src={bootstrapLogo}/>
-                    <h3 className="tec-grid-element-subtitle">Bootstrap</h3>
-                </div>
-                <div className={`tec-grid-element ${screenPos>=3 && "tec-grid-element-appear"}`}>
-                    <img className="tec-grid-element-img" alt="git-logo" src={gitLogo}/>
-                    <h3 className="tec-grid-element-subtitle">Git</h3>
-                </div>
-                <div className={`tec-grid-element ${screenPos>=3 && "tec-grid-element-appear"}`}>
-                    <img className="tec-grid-element-img" alt="node-logo" src={nodeLogo}/>
-                    <h3 className="tec-grid-element-subtitle">Node.js</h3>
-                </div>
-                <div className={`tec-grid-element ${screenPos>=3 && "tec-grid-element-appear"}`}>
-                    <img className="tec-grid-element-img" alt="npm-logo" src={npmLogo}/>
-                    <h3 className="tec-grid-element-subtitle">npm</h3>
-                </div>
-                <div className={`tec-grid-element ${screenPos>=3 && "tec-grid-element-appear"}`}>
-                    <img className="tec-grid-element-img" alt="react-logo" src={reactLogo}/>
-                    <h3 className="tec-grid-element-subtitle">React.js</h3>
-                </div>
-                <div className={`tec-grid-element ${screenPos>=3 && "tec-grid-element-appear"}`}>
-                    <img className="tec-grid-element-img" alt="styled-components-logo" src={styledLogo}/>
-                    <h3 className="tec-grid-element-subtitle">Styled Components</h3>
-                </div>
-                <div className={`tec-grid-element ${screenPos>=3 && "tec-grid-element-appear"}`}>
-                    <img className="tec-grid-element-img" alt="tailwind-logo" src={tailwindLogo}/>
-                    <h3 className="tec-grid-element-subtitle">Tailwind.css</h3>
-                </div>
-                <div className={`tec-grid-element ${screenPos>=3 && "tec-grid-element-appear"}`}>
-                    <img className="tec-grid-element-img" alt="java-logo" src={javaLogo}/>
-                    <h3 className="tec-grid-element-subtitle">Java</h3>
-                </div>
+
+                {TecElements.map(({id, imgSource, description, alt}) => (
+                                <TechnologiesElement
+                                    key={id}
+                                    screenPos={screenPos}
+                                    imgSource={imgSource} 
+                                    description={description}
+                                    alt={alt}
+                            
+                        />
+                    ))}
+                    
             </div>
             
             <p className={`tags grid ${screenPos>=3? "tags-appear": ""}`}><code>{"</"}</code>{`div`}<code>{">"}</code></p>

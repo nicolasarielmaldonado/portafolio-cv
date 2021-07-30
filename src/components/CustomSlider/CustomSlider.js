@@ -9,7 +9,7 @@ import './customSlider.css'
 export const CustomSlider = ({cards , screenPos}) => {
 
     return (
-		<Slider className={`carousel-main ${screenPos>=4 && "carousel-main-appear"}`} centerMode={true} adaptiveHeight={true} centerPadding={100} shift={100}>
+		<Slider className={`carousel-main ${screenPos>=4 && "carousel-main-appear"}`} centerMode={true} adaptiveHeight={true} centerPadding={60} shift={30}>
 			{cards.map(({number, id, imgSource, description, hrefGit, hrefDeploy, logoGitSource, logoDeploySource}) => (
 					<CarouselWorkCard
 					key={id}

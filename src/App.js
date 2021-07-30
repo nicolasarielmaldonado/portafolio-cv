@@ -16,8 +16,6 @@ export const App = () => {
     const scrollRef = useRef();
     
     const [screenPos, setScreenPos] = useState(0);
-    //offsetTop + 
-    //tamaño total contenedor = heightcontainer + 80px(margintop)
 
     const handleScreenChange = () => {
 

@@ -72,7 +72,7 @@ code {
     transform: translate(0px);
 }
 
-.h1, .h3, .section {
+.h1, .h2, .section {
     margin-left: 1.3em;
 }
 
@@ -158,7 +158,7 @@ code {
     }
 
     .paragraph {
-        padding: 0 50% 0 4rem
+        padding: 0 10% 0 4em
     }
 }
 
@@ -183,5 +183,8 @@ code {
 @media (min-width: 1200px) {
     .section-container {
         padding: 0 8rem;
+    }
+    .paragraph{
+        padding: 0 20% 0 4em
     }
 }

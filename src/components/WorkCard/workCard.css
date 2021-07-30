@@ -69,6 +69,13 @@
     text-decoration: none;
     background-color: transparent;
     border: 0;
+    opacity: 1;
+    transition: all .3s ease;
+}
+
+.button-link-overlay:hover {
+    opacity: 0.5;
+    transform: scale(1.1);
 }
 
 .overlay-logo {

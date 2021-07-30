@@ -102,6 +102,9 @@
     .h2-title {
         font-size: 1.2rem;
     }
+    .scroll-left{
+        left:12.7rem;
+    }
 }
 
 @media (min-width: 1200px) {

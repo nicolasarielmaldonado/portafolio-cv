@@ -49,6 +49,7 @@ p.form {
 
 .input-field-textarea {
     height: 8rem;
+    resize: none;
 }
 
 .form-list-button{
@@ -57,12 +58,21 @@ p.form {
 
 .form-button {
     background-color: rgb(143 143 143 / 26%);
-    border: 0;
+    border-top:2px solid transparent;
+    border-left:2px solid transparent;
+    border-right:2px solid transparent;
     border-bottom: 2px solid white;
     padding: 1rem 2rem;
     color: whitesmoke;
     font-family: 'Ubuntu', sans-serif;
     margin-top: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-button:hover {
+    border: 2px solid white;
+    transform: scale(1.05) translateX(2%);
 }
 
 .input-field:focus {
