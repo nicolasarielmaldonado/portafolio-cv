@@ -1,0 +1,2 @@
+.personal-photo{width:256px;height:256px;border-radius:50%;object-fit:cover;object-position:0 0;padding:0 10px;-webkit-transform:scale(.9);transform:scale(.9);transition:all 1s ease-out;opacity:0;z-index:200}.personal-photo-appear{-webkit-transform:scale(1);transform:scale(1);opacity:1}@media (min-width:1200px){.personal-photo{width:400px;height:400px}}
+/*# sourceMappingURL=5.0c2d2334.chunk.css.map */
